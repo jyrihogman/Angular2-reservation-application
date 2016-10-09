@@ -1,0 +1,48 @@
+@border-colour:#CCC;
+
+app-calendar { float:left; display:block; .border-box; background-color:white; border:solid 1px @border-colour; margin-bottom:10px; 
+    @secondary-colour: #00a3cc;
+    @spacing:20px;
+                
+    @icon-width:60px;
+    @header-height:60px;
+                
+    div.header {
+      float:left; width:100%;
+      background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+      background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+      background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+      background-repeat: no-repeat;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+      border-bottom: 1px solid #178acc;
+      -webkit-filter: none;
+              filter: none;
+      -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); height:@header-height; color:white;
+
+      * { .vertical-centre(@header-height); }
+      i { float:left; width:@icon-width; font-size:2em; font-weight:bold; position:relative; .border-box; padding:0 @spacing; cursor:pointer; }
+      i.fa-angle-left { text-align:left; }
+      i.fa-angle-right { text-align:right; margin-left:@icon-width*-1; }
+      span { font-size: 2em; float:left; width:100%; font-weight:bold; text-transform:uppercase; .border-box; padding-left:@icon-width+@spacing; margin-left:@icon-width*-1; text-align:center; padding-right:@icon-width; color:inherit; }
+    }
+    div.week { float:left; width:100%; border-top:solid 1px @border-colour;
+        &:first-child { border-top:none; }
+        &.selection { background:@secondary-colour; color:white; }
+        span.day { float:left; width:100%/7; .border-box; border-left:solid 1px @border-colour; font-size:1.3em; text-align:center; .vertical-centre(30px); background:white; cursor:pointer; color:black;
+            &:first-child { border-left:none; }
+            &.today { background:#E3F2FF; }
+            // &.different-month { color:#C0C0C0; }
+            &.selected { background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+                         background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+                         background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+                         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+                         -webkit-filter: none;
+                                  filter: none;
+                         color:white;
+            }
+            &.beforetoday { color:#C0C0C0; }
+        }
+        &.names>span { color:@secondary-colour; font-weight:bold; }
+    }
+}

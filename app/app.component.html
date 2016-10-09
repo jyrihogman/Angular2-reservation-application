@@ -1,0 +1,69 @@
+<div class='navbar navbar-default navbar-fixed-top animated fadein'>
+  <div class='container'>
+    <div class='navbar-header'>
+      <a class='navbar-brand '>Booking application</a>
+      <button class='navbar-toggle' type='button' data-toggle='collapse' data-target='#navbar-main'>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </button>
+    </div>
+    <div class='navbar-collapse collapse' id='navbar-main'>
+      <ul class='nav navbar-nav'>
+        <li>
+          <a href="javascript: void(0)" data-toggle="modal" data-target="#myModal">Help</a>
+        </li>
+      </ul>
+      <ul class='nav navbar-nav navbar-right'>
+        <li class='dropdown'>
+          <a class='dropdown-toggle' role="button" data-toggle='dropdown' [href] id='links'>Links <span class='caret'></span></a>
+          <ul class='dropdown-menu' role="menu">
+            <li><a href='http://www.SAMK.fi/'>SAMK</a></li>
+            <li><a>Booking application</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class='container'>
+      <div class='page-header' id='banner'>
+        <div class='row'>
+          <div class='col-lg-8 col-lg-offset-4 col-md-7 col-sm-6'>
+            <h1 class='animated fadein'><b>Booking application</b></h1>
+          </div>
+        </div>
+      </div>     
+      <div class='row'>
+          <div class='col-lg-6 col-lg-offset-3'>
+              <app-calendar></app-calendar>
+          </div>
+      </div>
+      <div class='row'>
+        <div class='col-lg-6 col-lg-offset-3'>
+          <br>
+            <div class='well bs-component animated fadein'>
+              <bookingForm></bookingForm>
+            </div>
+          </div>
+        </div>
+    </div>
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title">Instructions</h2>
+        </div>
+        <div class="modal-body">
+            <p>First pick a date from the calendar, then pick a time.</p>
+            <p>After picking time, you can fill in the details and click submit.</p>
+            <p>Please mind that ALL fields are mandatory</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
