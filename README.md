@@ -1,6 +1,9 @@
 # ToDo:
 
--Webpack needs some configuring, production build not quite automated yet
+Webpack:
+-Production build not quite automated yet
+-LESS bundling
+-File copying
 
 # Frontend setup
 
