@@ -1,0 +1,43 @@
+<form class='form-horizontal animated fadein'>
+  <fieldset>
+      <legend>{{dateToMoment()}}</legend>
+      <div class='form-group animated fadein' *ngIf='reservations != null'>
+      <label for='select' class='col-lg-2 control-label animated fadein'>Time</label>
+      <div class='col-lg-10' >
+        <select class='form-control' id='selectedReservation.id' name='selectedReservation.id' [(ngModel)]='selectedReservation.id' required>
+              <option value=''>Choose here</option>
+              <option *ngFor='let reservation of reservations' [value]='reservation.id'>{{reservation.time}}</option>
+        </select>
+      </div>
+    </div>
+    <div class='animated fadein' *ngIf='reservations != null'>
+    <div class='form-group' >
+      <label for='inputEmail' class='col-lg-2 control-label animated fadein'>Email</label>
+      <div class='col-lg-10'>
+        <input type='email' class='form-control' name='email' placeholder='Email' [(ngModel)]='selectedReservation.email' required>
+      </div>
+    </div>
+    <div class='form-group' >
+      <label for='inputPhone' class='col-lg-2 control-label animated fadein'>Phone</label>
+      <div class='col-lg-10'>
+        <input type='phone' class='form-control' name='phone' placeholder='Phone number' [(ngModel)]='selectedReservation.phone' required>
+      </div>
+    </div>
+    <div class='form-group'>
+      <label for='inputName' class='col-lg-2 control-label animated fadein'>Name</label>
+      <div class='col-lg-10'>
+        <input type='name' class='form-control' name='firstname' placeholder='First name' [(ngModel)]='selectedReservation.firstname' required>
+        <br>
+        <input type='name' class='form-control' name='lastname' placeholder='Last name' [(ngModel)]='selectedReservation.lastname' required>
+      </div>
+    </div>
+        <div class='form-group'>
+      <div class='col-lg-10 col-lg-offset-2'>
+        <button type='button' class='btn btn-primary' (click)='submit()'>Submit</button>
+        <button type='reset' class='btn btn-default'>Clear</button>
+      </div>
+    </div>
+
+    </div>
+  </fieldset>
+</form>
