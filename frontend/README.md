@@ -12,4 +12,4 @@ Start the project in Visual Studio and press F5
 
 # Frontend setup
 
-run npm install & npm start
+run npm install & npm Start (npm run build for production build)
