@@ -1,15 +1,15 @@
 # ToDo:
 
-Webpack:
+-Webpack needs some configuring, production build not quite automated yet
 
--Production build not quite automated yet
+# Database setup
 
--LESS bundling
+Modify SQLBatch with your local sql server name (atm localhost) 
 
--File copying
+# Backend setup
+
+Start the project in Visual Studio and press F5
 
 # Frontend setup
 
-run npm install & npm start
-
-## Database and backend available on my Angular 1 repository.
+run npm install & npm Start (npm run build for production build)
