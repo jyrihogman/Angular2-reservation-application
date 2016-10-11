@@ -2,8 +2,14 @@
 
 -Webpack needs some configuring, production build not quite automated yet
 
+# Database setup
+
+Modify SQLBatch with your local sql server name (atm localhost) 
+
+# Backend setup
+
+Start the project in Visual Studio and press F5
+
 # Frontend setup
 
 run npm install & npm start
-
-## Database and backend available on my Angular 1 repository.
