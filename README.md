@@ -16,6 +16,6 @@ run npm install & npm Start (npm run build for production build)
 
 ## [Demo](http://ng2booking.azurewebsites.net)
 
-###Demo database might not have any available reservations set.
-###If you happen to open up the demo after it's been in-active for a while, it takes 3-10 seconds for the backend to wake up. 
-###That's why it takes a while sometimes to see which dates are still reservable
+Demo database might not have any available reservations set.
+If you happen to open up the demo after it's been in-active for a while, it takes 3-10 seconds for the backend to wake up. 
+That's why it takes a while sometimes to see which dates are still reservable
