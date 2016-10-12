@@ -14,6 +14,6 @@ Start the project in Visual Studio and press F5
 
 run npm install & npm Start (npm run build for production build)
 
-## [Demo](http://samk-er.azurewebsites.net)
+## [Demo](http://ng2booking.azurewebsites.net)
 
 ###*Demo database might not have any available reservations set*.
